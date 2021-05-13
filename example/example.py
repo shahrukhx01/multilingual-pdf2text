@@ -4,9 +4,10 @@ import logging
 logging.basicConfig(level=logging.INFO)
 
 def main():
-    ## create searach query with configurations
+    ## create document for extraction with configurations
     pdf_document = Document(
-        document_path='/Users/shahrukh/Desktop/multilingual-pdf2text/example/python_intro.pdf'
+        document_path='/Users/shahrukh/Desktop/multilingual-pdf2text/example/python_intro.pdf',
+        language='en'
         )
     pdf2text = PDF2Text(document=pdf_document)
     content = pdf2text.extract()

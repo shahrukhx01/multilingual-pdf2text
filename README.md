@@ -1,4 +1,4 @@
-# Linkedin Jobs PyScraper
+# Multilingual PDF to Text.
 
 ## Install Package from Pypi
 1. Install it using pip.
@@ -8,27 +8,23 @@ pip install linkedin-jobs-pyscraper
 ## Example Usage
 2. Use it in your code
 ```python
-from linkedin_jobs_pyscraper.models.search.searcher import Searcher
-from linkedin_jobs_pyscraper.models.filters import filters
-from linkedin_jobs_pyscraper.linkedin_jobs_scraper import LinkedInJobsPyScraper
+ffrom multilingual_pdf2text.pdf2text import PDF2Text
+from multilingual_pdf2text.models.document_model.document import Document
+import logging
+logging.basicConfig(level=logging.INFO)
 
-## create searach query with configurations
-searcher = Searcher(
-    search_pages_per_search_term = 4,
-    search_terms = ['data analyst', 'data scientist'],
-    batch_size = 5,
-    output_filepath = 'out.csv',
-    location = 'Germany'
-    )
+def main():
+    ## create document for extraction with configurations
+    pdf_document = Document(
+        document_path='/Users/shahrukh/Desktop/multilingual-pdf2text/example/python_intro.pdf',
+        language='en'
+        )
+    pdf2text = PDF2Text(document=pdf_document)
+    content = pdf2text.extract()
+    print(content)
 
-search_filter = filters.Filters(
-    experience= filters.ExperienceLevelFilters.INTERNSHIP,
-    job_type= filters.TypeFilters.INTERNSHIP,
-    relevance= filters.RelevanceFilters.RECENT,
-    time= filters.TimeFilters.MONTH
-    )
-scraper = LinkedInJobsPyScraper(searcher= searcher, filters=search_filter) 
-scraper.start()
+if __name__ == "__main__":
+    main()
 ```
 
 The library can crawl the following fields of data:
