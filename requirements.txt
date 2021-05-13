@@ -1,0 +1,4 @@
+pydantic==1.8.1
+pytesseract==0.3.7
+pdf2image==1.14.0
+pillow==8.2.0
