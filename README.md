@@ -5,6 +5,10 @@
 ```bash
 pip install linkedin-jobs-pyscraper
 ```
+The library uses Tesseract which can be installed by following instructions:
+ 
+[Tesseract Installation](https://tesseract-ocr.github.io/tessdoc/Installation.html)
+
 ## Example Usage
 2. Use it in your code
 ```python
