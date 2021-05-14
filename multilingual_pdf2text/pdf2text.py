@@ -29,7 +29,7 @@ class PDF2Text:
         """
         Extract text content by performing OCR
         """
-        pdf2image_converter = Image2Text(images=images)
+        pdf2image_converter = Image2Text(images=images, language=self.document.language)
         content = pdf2image_converter.get_text_content() ## extract text content from images
         return content
     

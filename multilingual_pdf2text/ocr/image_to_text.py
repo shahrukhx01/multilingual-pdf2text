@@ -6,9 +6,10 @@ class Image2Text:
     """
     Extracts relevant information from HTML markdown for Job Ids and Job detail.
     """
-    def __init__(self, images):
+    def __init__(self, images, language):
         self.logger = logging.getLogger(__name__)
         self.images = images
+        self.ocr_config = "-l {}".format(language)
     
     def get_text_content(self) -> list[str]:
         """
@@ -19,7 +20,7 @@ class Image2Text:
         content = []
         try:
             for image_idx, image in enumerate(self.images):
-                text = pytesseract.image_to_string(image)
+                text = pytesseract.image_to_string(image, config=self.ocr_config)
                 content.append({
                     'page_number': image_idx + 1,
                     'text': text
