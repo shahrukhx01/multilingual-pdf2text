@@ -31,7 +31,7 @@ The library uses Tesseract which can be installed by following instructions:
  
 [Tesseract Installation](https://tesseract-ocr.github.io/tessdoc/Installation.html)
 
-Tesseractsupports the following languages:
+Tesseract supports the following languages:
 Code	Language
 afr	Afrikaans	
 amh	Amharic	
