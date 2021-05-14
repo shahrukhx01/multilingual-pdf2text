@@ -31,10 +31,6 @@ if __name__ == "__main__":
     main()
 ```
 
-The library uses Tesseract which can be installed by following instructions:
- 
-[Tesseract Installation](https://tesseract-ocr.github.io/tessdoc/Installation.html)
-
 Tesseract supports the following languages:
 Code	Language
 * afr	Afrikaans	
