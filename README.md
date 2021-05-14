@@ -3,7 +3,7 @@
 ## Install Package from Pypi
 1. Install it using pip.
 ```bash
-pip install linkedin-jobs-pyscraper
+pip install multilingual-pdf2text
 ```
 The library uses Tesseract which can be installed by following instructions:
  
