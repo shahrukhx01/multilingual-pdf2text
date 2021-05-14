@@ -8,7 +8,7 @@ pip install linkedin-jobs-pyscraper
 ## Example Usage
 2. Use it in your code
 ```python
-ffrom multilingual_pdf2text.pdf2text import PDF2Text
+from multilingual_pdf2text.pdf2text import PDF2Text
 from multilingual_pdf2text.models.document_model.document import Document
 import logging
 logging.basicConfig(level=logging.INFO)
