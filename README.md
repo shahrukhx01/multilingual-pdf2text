@@ -20,8 +20,8 @@ logging.basicConfig(level=logging.INFO)
 def main():
     ## create document for extraction with configurations
     pdf_document = Document(
-        document_path='/Users/shahrukh/Desktop/multilingual-pdf2text/example/python_intro.pdf',
-        language='en'
+        document_path='/Users/shahrukh/Desktop/multilingual-pdf2text/example/example.pdf',
+        language='spa'
         )
     pdf2text = PDF2Text(document=pdf_document)
     content = pdf2text.extract()
