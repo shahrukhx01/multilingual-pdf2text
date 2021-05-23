@@ -1,6 +1,6 @@
 # Multilingual PDF to Text.
 
-[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1a4lCsxedHGIFgpoyHWYF5v4fLVxKmZpQ?usp=sharing]
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1a4lCsxedHGIFgpoyHWYF5v4fLVxKmZpQ?usp=sharing)
 
 ## Install Package from Pypi
 1. Install it using pip.
