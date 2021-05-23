@@ -11,7 +11,7 @@ class PDF2Images:
     def __init__(self):
         self.logger = logging.getLogger(__name__)
     
-    def convert_document_to_images(self, document: Document) -> list[PpmImageFile]:
+    def convert_document_to_images(self, document: Document) -> list:
         """
         Converts the Document object to 
         Keyword arguments:
