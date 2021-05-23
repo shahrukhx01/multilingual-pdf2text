@@ -11,7 +11,7 @@ class Image2Text:
         self.images = images
         self.ocr_config = "-l {}".format(language)
     
-    def get_text_content(self) -> list[str]:
+    def get_text_content(self) -> list:
         """
         Converts the list of Images to list of strings.
         """
