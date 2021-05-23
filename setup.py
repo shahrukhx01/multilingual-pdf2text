@@ -4,34 +4,26 @@ with open('README.md', 'r') as fh:
     long_description = fh.read()
 
 setup(
-    name='linkedin-jobs-pyscraper',
-    version='1.0.0',
+    name='multilingual-pdf2text',
+    version='1.1.0',
     author='Shahrukh Khan',
     author_email='sk28671@gmail.com',
-    description='Scrape public jobs postings from LinkedIn in native python without selenium or any headless browser.',
+    description='A python library for extracting text from PDFs without losing the formatting of the PDF content.',
     long_description=long_description,
     long_description_content_type='text/markdown',
-    url='https://github.com/shahrukhx01/linkedin-jobs-pyscraper',
+    url='https://github.com/shahrukhx01/multilingual-pdf2text',
     packages=[
-        'linkedin_jobs_pyscraper',
-        'linkedin_jobs_pyscraper.extract',
-        'linkedin_jobs_pyscraper.search',
-        'linkedin_jobs_pyscraper.models',
-        'linkedin_jobs_pyscraper.utils',
-        'linkedin_jobs_pyscraper.models.extract',
-        'linkedin_jobs_pyscraper.models.job',
-        'linkedin_jobs_pyscraper.models.search',
-        'linkedin_jobs_pyscraper.models.filters',
+        'multilingual_pdf2text',
+        'multilingual_pdf2text.doc2img',
+        'multilingual_pdf2text.models',
+        'multilingual_pdf2text.ocr',
+        'multilingual_pdf2text.models.document_model'
     ],
     install_requires=[
-        'beautifulsoup4',
-        'bs4',
-        'certifi',
-        'pandas',
-        'requests',
-        'urllib3',
-        'python-dateutil',
-        'pydantic'
+        'pydantic',
+        'pytesseract',
+        'pdf2image',
+        'pillow'
     ],
     classifiers=[
         'Intended Audience :: Developers',
