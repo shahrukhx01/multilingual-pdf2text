@@ -33,7 +33,7 @@ class PDF2Text:
         content = pdf2image_converter.get_text_content() ## extract text content from images
         return content
     
-    def extract(self) -> list[str]:
+    def extract(self) -> list:
         """
         Extract text content by performing OCR
         """
