@@ -33,7 +33,7 @@ if __name__ == "__main__":
     main()
 ```
 
-Tesseract supports the following languages:
+Tesseract supports the following languages: <br/>
 Code	Language
 * afr	Afrikaans	
 * amh	Amharic	
