@@ -1,9 +1,10 @@
 ![1625216011430](https://user-images.githubusercontent.com/6007894/125522381-1ba90cd2-473e-4513-b544-caa1b68d065d.jpeg)
 
 
-# [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1a4lCsxedHGIFgpoyHWYF5v4fLVxKmZpQ?usp=sharing) 
+#Multilingual PDF to Text
+<br/>[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1a4lCsxedHGIFgpoyHWYF5v4fLVxKmZpQ?usp=sharing) 
 [![Downloads](https://static.pepy.tech/personalized-badge/multilingual-pdf2text?period=total&units=international_system&left_color=black&right_color=orange&left_text=Downloads)](https://pepy.tech/project/multilingual-pdf2text) <br/>
-Multilingual PDF to Text
+
 
 
 
